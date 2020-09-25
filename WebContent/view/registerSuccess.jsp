@@ -1,12 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
 
+<body>
+	<h1>You Registered successfully</h1>
+
+	<%-- JSP Expression Language --%>
+	<ul>
+		<li>id: ${customer.id }</li>
+		<li>password: ${customer.password }</li>
+		<li>gender: ${customer.gender }</li>
+		<li>name: ${customer.name }</li>
+		<li>email: ${customer.email }</li>
+	</ul>
+	<p>
+		<a href="/hw1-helloMVC/index.jsp"> go to home page </a>
+	</p>
 </body>
 </html>
